@@ -1,0 +1,15 @@
+Typescript OOP (Object Oriented Programing)
+
+Object Oriented Programing
+object oriented programing adalah sudut pandang bahasa pemogramanyang berkonsep object
+ada banyak sudut pandang bahasa pemograman namun OOP adalah yang sangat populer saat ini 
+ada beberapa istilah yang perlu di mengerti dalam OOP yaitu object dan class
+
+Object 
+object adalah data yang berisi field/properties/attribute dan method/function/behavior
+
+Class 
+class adalah blueprint prototype atau cetakan untuk membuat object
+class berisikan deklarasi semua properties dan function yang dimiliki oleh object 
+setiap object selalu dibuat dari class
+dan sebuah class bisa membuat object tanpa batas
