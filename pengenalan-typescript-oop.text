@@ -13,3 +13,22 @@ class adalah blueprint prototype atau cetakan untuk membuat object
 class berisikan deklarasi semua properties dan function yang dimiliki oleh object 
 setiap object selalu dibuat dari class
 dan sebuah class bisa membuat object tanpa batas
+
+OOP di Typescript
+implementasi OOP di typescript,sebenarnya akan diterjemahkan menjadi kode javascript dan javascript sendiri sebenarnya sejak awal dibuat bahasa prosedural, bukan bahasa pemograman berorientasikan object 
+oleh karena itu,implementasi OOP di javascript memang tidak sedatail bahasa pemograman lain yang memang dari awal merupakan bahasa pemograman OOP seperti java dan C++ 
+
+Class 
+untuk membuat class di typescript kita bisa menggunakan kata kunci class sama seperti di javascript 
+cara membuat object dari class cukup menggunakan kata kunci (new) sama seperti di javascript
+
+Constructor
+constructor adalah method atau function yang dipanggil ketika pertama kali object di buat dari class 
+constructor sama seperti function biasanya memiliki parameter yang membedakan adalah pada constructor kita tidak perlu mengembalikan value
+
+Properties atau Field 
+properties atau field adalah attribute yang dimiliki oleh class
+pada javascript kita bisa langsung saja membuat attribute tanpa harus mendeklarasikan attributnya 
+di typescript kita mendeklarasikan propeertiesnya terlebih dahulu beserta dengan type datanya
+sama seperti kita membuat attribute di type atau interface kia juga bisa menjadikan properties sebagai optional mandatory atau readonly
+properties yang mandatory wajib ditambahkan nilainya di constructor 
