@@ -32,3 +32,32 @@ pada javascript kita bisa langsung saja membuat attribute tanpa harus mendeklara
 di typescript kita mendeklarasikan propeertiesnya terlebih dahulu beserta dengan type datanya
 sama seperti kita membuat attribute di type atau interface kia juga bisa menjadikan properties sebagai optional mandatory atau readonly
 properties yang mandatory wajib ditambahkan nilainya di constructor 
+
+Properties Default value
+properties juga bisa memiliki default value kita bisa menambahkan menggunakan operator (=) pada properties yang kita inginkan tambahkan default valuenya 
+
+Method 
+selain properties di class juga bisa memilki function atau lebih sering di sebut method 
+cara pembuatan method sama seperti di javascript hanya saja pada typescript kita harus menentukan tipe data parameter dan return valuenya
+
+Getter dan Setter
+sampai sekarang ketika kita ingin mengubah data properties kita bisa langsung gunakan operator (=) dan ketika kita ingin mengambil data cukup gunakan (.)/titik
+javascript memiliki fitur bernama getter dan setter begitupun juga typescript dimana itabisa membuat method unntuk mengubah properties 
+karena bentuknya adalah method maka kitabisa menambahkan validasi apapun pada method tersebut sebelum properties aslinya diubah   
+
+Inharitance 
+sama seperti di javascript typescript juga mendukung pewariasan antar class menggunakan kata kunci extends 
+secara otomatis semua properties dan method yang ada di parent class akan di wariskan ke child calss 
+pewarisan ditypescript sama seperti di javascript hanya bisa memiliki satu parent saja
+namun satu parent class bisa memiliki banyak sekali parent  child class  
+
+Interface Inheritance
+di bahas pemograman seperti java kadang interface digunakan sebagai kontrak 
+di typescript hal itu juga bisa dilakukan kita bisa membuat  class yang mengikuti kontrak sebuah interface caranya dengan menggunakan kata kunci implements 
+karena ini sebenarnya bukanlah pewarisan oleh karena itu  untuk implements kita bisa melakukan implements kelebih dari satu interface dimana pada extends hal ini tidak bisa dilakukan  
+
+Super Constructor 
+pada kasus pewariasan antar class kadang di child class kita ingin membuat constructor juga, baik itu sama seperti di parent child ataupun berbeda 
+pada kasus kita membuat constructor di chhild class maka secara otomatis kita harus memanggil constructor di parent class
+hal ini sebenarnya sama di javascript 
+kita bisa menggunakan kata kunci super untuk memanggil constructor di parent class
