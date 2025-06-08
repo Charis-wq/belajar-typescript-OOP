@@ -61,3 +61,27 @@ pada kasus pewariasan antar class kadang di child class kita ingin membuat const
 pada kasus kita membuat constructor di chhild class maka secara otomatis kita harus memanggil constructor di parent class
 hal ini sebenarnya sama di javascript 
 kita bisa menggunakan kata kunci super untuk memanggil constructor di parent class
+
+Method Overriding
+saat kita membuat child class kita bisa mendeklarasikan ulang method yang terdapat di parent class
+jika deklarasi method sama maka itu adalah method Overriding
+pada kasus tertentu kadang kita sering melakukan hal ini
+
+Super Method 
+sama seperti di constractor saat kita membuat method overriding kita juga bisa memanggil method yang sama yang terdapat di parent class dengan menggunakan kata kunci super lalu diikuti dengan method yang ingin kita panggil
+
+Visibilty
+di javascript dan typescript secara deafult setiap membuat properties atau method maka sifatnya adalah bisa di akses di dalam class atau di luar class(public)
+di javascript kita mengenal private properties atau method dimana menggunakan prefix# yang secara otomatis hanya bisa di akses di dalam class 
+di typescript Visibilty ini di permudah dengan mengenalkan tiga kata kunci public,private dan proteced 
+
+Visibilty di Typescript
+
+public: bisa di akses dimanapun secara default,jika tdak menyebutkan visibility maka akan menggunakan visibility public
+private: hanya bisa di akses oleh classnya sendiri
+proteced: sama seperti private tetapi juga bisa diakses oleh class turunannya 
+
+Parameter Properties
+kadang  sering kita selalu membuat parameter di constructor yang hanya digunakan sebagai nilai untuk properties 
+pada kasus seperti ini kita bisa menggunakan parametr properties yang secara otomatis parameter dicontractor akan di jadikan sebagai prooperies di classnya
+unutuk membuat parameter properties kita bisa langsung menambahkan visibility pada parameter di constructor
