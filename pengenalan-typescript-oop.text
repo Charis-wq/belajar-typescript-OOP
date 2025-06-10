@@ -85,3 +85,28 @@ Parameter Properties
 kadang  sering kita selalu membuat parameter di constructor yang hanya digunakan sebagai nilai untuk properties 
 pada kasus seperti ini kita bisa menggunakan parametr properties yang secara otomatis parameter dicontractor akan di jadikan sebagai prooperies di classnya
 unutuk membuat parameter properties kita bisa langsung menambahkan visibility pada parameter di constructor
+
+Operator Instanceof
+kadang ada kasus kita ingin mengecek apakah sebuah object merupakan instance dari class tertentu atau bukan 
+kita tidak bisa menggunakan operator typeof karena object dari class jika kita gunakan operator typeof hasilnya adalah object 
+operator instanceof akan menghasilkan boolean true jika benar object tersebut adalah instance objectnya atau false jika bukan
+
+Polymorphism
+polymorphism berasal dari bahasa yunani yang berarti banyak bentuk 
+dalam OOP polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain
+polymorphism erat hubungannya dengan Inheritance
+
+Method polymorphism
+saat  kita membuat function/method dengan parameter kita juga bisa mengirim data polymorphism pada parameter tersebut 
+misal kita membuat sebuah function dengan parameter class Employee kita bisa mengirim object dalam bentuk Employee Manager dan Viceprisedent 
+hal ini karena manager dan vicepresident merupakan turunan dari employee sehingga kita bisa mengirim data seluruh turunan dari employee  
+
+Type Cast 
+di typescript dasar kita pernah belajar tentang type assertion dimana kita bisa mengubah tipe data dari satu tipe data ke tipe data lainnya yang lebih sepecific atau detail
+ini juga bisa kita lakukan pada kasus method polymorphism
+kita bisa kombinasikan operator instanceof dan type assertion
+
+Perlu di Ingat! 
+saat melakukan Type Cast pastikan posisi child paling bawah dilakukan pengecekan di awal 
+hal ini agar tidaka terjadi kesalahan konversi 
+contoh jika ubah posisi pengecekan instanceof manager dan vice president maka ketika kita mengirim vice president dia akan berhenti di manager hal ini karena hasil ,instanceof bernilai true karena vice president adalah turunan dari manager
